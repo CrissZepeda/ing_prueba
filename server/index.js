@@ -9,7 +9,6 @@ import { connectDB } from "./database/conexion.js";
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-connectDB();
 //Setting app
 app.set("port", config.port);
 
