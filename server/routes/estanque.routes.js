@@ -8,6 +8,7 @@ import {
 } from "../controllers/estanques.controller.js";
 
 const router = Router();
+console.log("estoy en routes de estanque");
 
 router.get("/estanques", todosEstanques);
 router.post("/estanques", insertarEstanques);

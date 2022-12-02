@@ -3,6 +3,7 @@ import Estanque from "../models/Estanque.js";
 
 export const todosEstanques = async (req, res) => {
     try {
+        console.log("Estoy en traer todos los estanques");
         await connectDB();
         const estanques = await Estanque.find();
         await closeDB();
